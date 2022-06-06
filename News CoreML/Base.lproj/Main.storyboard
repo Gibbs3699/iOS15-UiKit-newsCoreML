@@ -11,7 +11,7 @@
         <!--NewFun-->
         <scene sceneID="B5f-H0-mcz">
             <objects>
-                <tableViewController id="CAK-bX-5Qf" sceneMemberID="viewController">
+                <tableViewController id="CAK-bX-5Qf" customClass="ArticleTableViewController" customModule="News_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wu5-pD-MCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1528.985507246377" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Article Web View View Controller-->
         <scene sceneID="3DU-1H-Jb9">
             <objects>
-                <viewController id="hhe-Dr-HcH" sceneMemberID="viewController">
+                <viewController id="hhe-Dr-HcH" customClass="ArticleWebViewViewController" customModule="News_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQV-3s-GhL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

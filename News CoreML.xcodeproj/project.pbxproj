@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		DC4628FB2845152300A12141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4628FA2845152300A12141 /* AppDelegate.swift */; };
 		DC4628FD2845152300A12141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4628FC2845152300A12141 /* SceneDelegate.swift */; };
-		DC4628FF2845152300A12141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4628FE2845152300A12141 /* ViewController.swift */; };
 		DC4629022845152300A12141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4629002845152300A12141 /* Main.storyboard */; };
 		DC4629042845152500A12141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4629032845152500A12141 /* Assets.xcassets */; };
 		DC4629072845152500A12141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4629052845152500A12141 /* LaunchScreen.storyboard */; };
+		DC5ED708284E2D0600B54D48 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC5ED707284E2D0600B54D48 /* Alamofire */; };
+		DC5ED70A284E2D1700B54D48 /* NewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5ED709284E2D1700B54D48 /* NewHelper.swift */; };
+		DC5ED70C284E2E1900B54D48 /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5ED70B284E2E1900B54D48 /* ArticleTableViewController.swift */; };
+		DC5ED70E284E2E3400B54D48 /* ArticleWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5ED70D284E2E3400B54D48 /* ArticleWebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC4628F72845152300A12141 /* News CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4628FA2845152300A12141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4628FC2845152300A12141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC4628FE2845152300A12141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC4629012845152300A12141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC4629032845152500A12141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4629062845152500A12141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4629082845152500A12141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5ED709284E2D1700B54D48 /* NewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHelper.swift; sourceTree = "<group>"; };
+		DC5ED70B284E2E1900B54D48 /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
+		DC5ED70D284E2E3400B54D48 /* ArticleWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5ED708284E2D0600B54D48 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +62,11 @@
 		DC4628F92845152300A12141 /* News CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				DC5ED709284E2D1700B54D48 /* NewHelper.swift */,
 				DC4628FA2845152300A12141 /* AppDelegate.swift */,
 				DC4628FC2845152300A12141 /* SceneDelegate.swift */,
-				DC4628FE2845152300A12141 /* ViewController.swift */,
+				DC5ED70D284E2E3400B54D48 /* ArticleWebViewViewController.swift */,
+				DC5ED70B284E2E1900B54D48 /* ArticleTableViewController.swift */,
 				DC4629002845152300A12141 /* Main.storyboard */,
 				DC4629032845152500A12141 /* Assets.xcassets */,
 				DC4629052845152500A12141 /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "News CoreML";
+			packageProductDependencies = (
+				DC5ED707284E2D0600B54D48 /* Alamofire */,
+			);
 			productName = "News CoreML";
 			productReference = DC4628F72845152300A12141 /* News CoreML.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = DC4628EE2845152300A12141;
+			packageReferences = (
+				DC5ED706284E2D0600B54D48 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DC4628F82845152300A12141 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4628FF2845152300A12141 /* ViewController.swift in Sources */,
+				DC5ED70C284E2E1900B54D48 /* ArticleTableViewController.swift in Sources */,
+				DC5ED70A284E2D1700B54D48 /* NewHelper.swift in Sources */,
+				DC5ED70E284E2E3400B54D48 /* ArticleWebViewViewController.swift in Sources */,
 				DC4628FB2845152300A12141 /* AppDelegate.swift in Sources */,
 				DC4628FD2845152300A12141 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC5ED706284E2D0600B54D48 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC5ED707284E2D0600B54D48 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC5ED706284E2D0600B54D48 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC4628EF2845152300A12141 /* Project object */;
 }
